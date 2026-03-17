@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Wealthix: AI Financial Intelligence",
     description: "A high-performance financial intelligence platform merging traditional banking with Google Gemini 1.5. Synthesizes real-time footprints into actionable wealth insights.",
-    image: "/projects/product_tour.webp",
+    image: "/media/wealthix_demo.webp",
     tags: ["Next.js 14", "Java 23", "FastAPI", "Gemini 1.5", "Plaid"],
     link: "https://github.com/dhonitheja/AI-Powered-Financial-Intelligence-Platform",
     externalLink: "#",
