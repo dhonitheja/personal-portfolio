@@ -18,20 +18,26 @@ import {
   Calendar
 } from 'lucide-react';
 
-const experience = [
+const certifications = [
   {
-    role: "Full Stack AI Engineer",
-    company: "Freelance / Open Source",
-    period: "2024 - Present",
-    description: "Architecting autonomous AI agents and premium FinTech platforms. Specialized in high-performance Java/Python backends and Next.js frontends.",
-    highlights: ["Built Wealthix AI", "Developed Agentic Audit Engines", "Scaled AI Directories"]
+    title: "AWS Certified Solutions Architect",
+    issuer: "Amazon Web Services",
+    link: "https://www.credly.com/badges/cff875eb-0773-4e1c-a127-459285ca6df3/public_url"
   },
   {
-    role: "Full Stack Developer",
-    company: "Innovation Labs",
-    period: "2023 - 2024",
-    description: "Focused on building responsive web applications and integrating secure payment gateways like Stripe and Plaid.",
-    highlights: ["Payment Integration", "UX/UI Optimization", "API Microservices"]
+    title: "Oracle Data Platform - Certified Foundations",
+    issuer: "Oracle",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=65EAF786AA04A0564CF6BF09A8EEBBB40C1844C5FEB1228E64817CCF928CC5D9"
+  },
+  {
+    title: "Oracle Cloud Infrastructure - Certified Foundations",
+    issuer: "Oracle",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=9FFB1372FED3353D9C2099AE8B29256A521688D3262B2D67C2232A10430844E6"
+  },
+  {
+    title: "Oracle Cloud Infrastructure - Certified AI Foundations",
+    issuer: "Oracle",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=3976F262DFB3E0E68BA7454B4D4919DCB9335DC507F68BE6ABE9A6B856DD9BE9"
   }
 ];
 
@@ -39,7 +45,7 @@ const projects = [
   {
     title: "Wealthix: AI Financial Intelligence",
     description: "A high-performance financial intelligence platform merging traditional banking with Google Gemini 1.5. Synthesizes real-time footprints into actionable wealth insights.",
-    image: "/media/wealthix_demo.webp",
+    image: "/media/wealthix_dashboard.png",
     tags: ["Next.js 14", "Java 23", "FastAPI", "Gemini 1.5", "Plaid"],
     link: "https://github.com/dhonitheja/AI-Powered-Financial-Intelligence-Platform",
     externalLink: "#",
@@ -122,9 +128,6 @@ export default function Home() {
               Building the future of <br />
               <span className="text-gradient">Intelligent Systems.</span>
             </h1>
-            <p className="text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-              Crafting premium digital experiences where elegant design meets technical excellence. Specialized in high-performance Full Stack applications and AI integrations.
-            </p>
             <div className="flex gap-4">
               <a href="#work" className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-500/20">
                 View My Work
@@ -258,12 +261,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience Section */}
+      {/* Certifications Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-16 text-center">Professional Journey</h2>
-          <div className="space-y-8">
-            {experience.map((exp, idx) => (
+          <h2 className="text-3xl font-bold mb-16 text-center">Professional Certifications</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {certifications.map((cert, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -271,33 +274,20 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="p-8 rounded-3xl glass glass-hover relative overflow-hidden"
               >
-                <div className="flex flex-col md:flex-row justify-between gap-6">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20">
-                        <Briefcase className="text-indigo-400" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="text-2xl font-bold">{exp.role}</h4>
-                        <p className="text-indigo-400 font-medium">{exp.company}</p>
-                      </div>
-                    </div>
-                    <p className="text-slate-400 max-w-2xl text-lg">
-                      {exp.description}
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                      {exp.highlights.map((h, i) => (
-                        <span key={i} className="flex items-center gap-2 text-sm text-slate-300 bg-white/5 py-1 px-3 rounded-full border border-white/10">
-                          <Zap size={14} className="text-indigo-400" /> {h}
-                        </span>
-                      ))}
-                    </div>
+                <div className="flex items-center gap-6">
+                  <div className="p-4 rounded-2xl bg-indigo-500/10 border border-indigo-500/20">
+                    <Shield className="text-indigo-400" size={32} />
                   </div>
-                  <div className="flex items-start md:items-center">
-                    <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-slate-300">
-                      <Calendar size={18} />
-                      <span className="font-medium">{exp.period}</span>
-                    </div>
+                  <div className="space-y-2">
+                    <h4 className="text-xl font-bold">{cert.title}</h4>
+                    <p className="text-indigo-400 font-medium">{cert.issuer}</p>
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      className="text-sm text-slate-500 hover:text-white flex items-center gap-1 transition-colors group"
+                    >
+                      Verify Badge <ExternalLink size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -372,10 +362,9 @@ export default function Home() {
             <a href="https://github.com/dhonitheja" className="text-slate-400 hover:text-white transition-colors">
               <Github size={24} />
             </a>
-            {/* Add LinkedIn, Twitter etc */}
           </div>
           <p className="mt-12 text-slate-500 text-sm">
-            © 2026 Developed by Antigravity AI Agent. Built with Next.js & Passion.
+            © 2026 Developed with Passion. Built with Next.js & TypeScript.
           </p>
         </div>
       </footer>
