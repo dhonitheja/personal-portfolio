@@ -54,7 +54,7 @@ const projects = [
   {
     title: "AI Directory Pro",
     description: "A premium directory showcasing 300+ vetted AI tools. Built for speed and discoverability, helping users find the right AI solution for any workflow.",
-    image: "/projects/ai_directory.png",
+    image: "/media/ai_directory_preview.png",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "React"],
     link: "https://github.com/dhonitheja/ai-directory-pro",
     externalLink: "https://ai-directory-pro-frontend.vercel.app/",
@@ -69,7 +69,7 @@ const projects = [
   {
     title: "AI Financial Co-Pilot: Dispute Engine",
     description: "An agentic audit engine using Claude 3.5 Sonnet to detect 'Credit Chaos' and automate fee reversals. Leverages the RBI Account Aggregator framework for forensic transaction auditing.",
-    image: "/projects/dispute_engine.png",
+    image: "/media/dispute_engine_preview.png",
     tags: ["Claude 3.5", "Vertex AI", "Next.js 16", "Antigravity"],
     link: "https://github.com/dhonitheja/AI-Financial-Co-Pilot-Automated-Dispute-Engine",
     externalLink: "#",
