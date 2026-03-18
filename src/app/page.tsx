@@ -104,7 +104,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass border-x-0 border-t-0 py-4">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <span className="text-xl font-bold text-gradient">Portfolio.</span>
+          <span className="text-xl font-bold text-gradient">Sai Teja.</span>
           <div className="flex gap-8 text-sm font-medium text-slate-300">
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#about" className="hover:text-white transition-colors">About</a>
@@ -124,6 +124,7 @@ export default function Home() {
             <span className="px-4 py-2 rounded-full glass text-sm font-medium text-indigo-400 mb-6 inline-block">
               Full Stack Engineer & AI Specialist
             </span>
+            <p className="text-2xl text-slate-400 mb-4 font-medium">Hi, I'm Sai Teja Ragula —</p>
             <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight">
               Building the future of <br />
               <span className="text-gradient">Intelligent Systems.</span>
@@ -232,7 +233,7 @@ export default function Home() {
             >
               <h2 className="text-4xl font-bold mb-8">Engineering with <span className="text-gradient">Purpose.</span></h2>
               <p className="text-lg text-slate-400 leading-relaxed mb-6">
-                I'm a Full Stack Engineer passionate about the intersection of human-centric design and autonomous intelligence. My work focuses on building tools that empower users through data synthesis and agentic workflows.
+                I'm <strong>Sai Teja Ragula</strong>, a Full Stack Engineer passionate about the intersection of human-centric design and autonomous intelligence. My work focuses on building tools that empower users through data synthesis and agentic workflows.
               </p>
               <p className="text-lg text-slate-400 leading-relaxed">
                 Whether it's auditing complex financial transactions or building high-speed directory platforms, I strive for technical excellence and premium user experiences in every line of code.
@@ -364,7 +365,7 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-12 text-slate-500 text-sm">
-            © 2026 Developed with Passion. Built with Next.js & TypeScript.
+            © 2026 Sai Teja Ragula. Built with Passion, Next.js & TypeScript.
           </p>
         </div>
       </footer>
