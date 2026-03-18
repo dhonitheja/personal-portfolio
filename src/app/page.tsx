@@ -110,7 +110,7 @@ export default function Home() {
             <a href="#work" className="hover:text-white transition-colors">Work</a>
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            <a href="https://github.com/dhonitheja/personal-portfolio" target="_blank" className="hover:text-white transition-colors group flex items-center gap-1">
+            <a href="https://github.com/dhonitheja" target="_blank" className="hover:text-white transition-colors group flex items-center gap-1">
               Github <ExternalLink size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
@@ -137,8 +137,8 @@ export default function Home() {
               <a href="#work" className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-500/20">
                 View My Work
               </a>
-              <a href="https://github.com/dhonitheja/personal-portfolio" target="_blank" className="px-8 py-4 glass glass-hover rounded-xl font-semibold transition-all flex items-center gap-2">
-                <Github size={20} /> View Source
+              <a href="https://github.com/dhonitheja" target="_blank" className="px-8 py-4 glass glass-hover rounded-xl font-semibold transition-all flex items-center gap-2">
+                <Github size={20} /> Github Profile
               </a>
               <a href="#contact" className="px-8 py-4 border border-white/10 hover:bg-white/5 rounded-xl font-semibold transition-all">
                 Let's Talk
